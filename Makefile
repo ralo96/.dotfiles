@@ -15,6 +15,9 @@ endif
 ifneq (,$(wildcard ~/.bashrc))
 	mv ~/.bashrc ~/.bashrc.bak
 endif
+ifneq (,$(wildcard ~/.bash_profile))
+	mv ~/.bashrc ~/.bashrc.bak
+endif
 ifneq (,$(wildcard ~/.gitconfig))
 	mv ~/.gitconfig ~/.gitconfig.bak
 endif
@@ -36,7 +39,7 @@ endif
 ifneq (,$(wildcard ~/.bashrc))
 	rm ~/.bashrc
 endif
-ifneq (,$(wildcard ~/.bashrc))
+ifneq (,$(wildcard ~/.bash_profile))
 	rm ~/.bash_profile
 endif
 ifneq (,$(wildcard ~/.gitconfig))
