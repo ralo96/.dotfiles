@@ -1,0 +1,19 @@
+[credential "https://github.com"]
+  helper = !/usr/bin/gh auth git-credential
+[color]
+  ui = auto
+[push]
+  default = simple
+[user]
+  name = Ryan Long
+  email = ryan.long96@yahoo.com
+[core]
+  autocrlf = input
+[diff]
+  tool = vimdiff
+[alias]
+  co = checkout
+  st = status -s
+  lg = log --oneline --all --graph --decorate
+  br = branch
+
