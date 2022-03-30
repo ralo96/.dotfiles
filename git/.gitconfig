@@ -9,6 +9,7 @@
   email = ryan.long96@yahoo.com
 [core]
   autocrlf = input
+	editor = vim
 [diff]
   tool = vimdiff
 [alias]
