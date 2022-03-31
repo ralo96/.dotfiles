@@ -76,4 +76,17 @@ autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
 autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
+nnoremap <leader><F2> :set list lcs+=space:. listchars+=tab:-><CR>
+
+" Plug ins
+"call plug#begin()
+"
+"Plug 'https://github.com/airblade/vim-gitgutter'
+"Plug 'vim-airline/vim-airline'
+"Plug 'vim-airline/vim-airline-themes'
+"Plug 'neoclide/coc.nvim', {'branch': 'release'}
+"
+"call plug#end()
+
+"let g:airline_theme='base16'
 
